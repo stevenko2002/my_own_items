@@ -2,12 +2,68 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>檔案連結頁面</title>
+    <title>歡迎來到 nano_banana!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #FFDF94 0%, #fff6d5 50%, #6AD7E5 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', 'Noto Sans TC', sans-serif;
+            color: #232323;
+            animation: bgMove 10s infinite alternate;
+        }
+        @keyframes bgMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        h1 {
+            font-size: 2.6em;
+            margin-bottom: 0.3em;
+            letter-spacing: 3px;
+            text-shadow: 2px 4px 12px #fff8;
+        }
+        .desc {
+            font-size: 1.2em;
+            margin-bottom: 2.4em;
+            color: #3b575c;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 1.2em 2.4em;
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(90deg, #6AD7E5 40%, #FFD858 100%);
+            border: none;
+            border-radius: 40px;
+            text-decoration: none;
+            box-shadow: 0 2px 18px #6edadd44;
+            transition: transform .2s, box-shadow .2s, background .3s;
+            cursor: pointer;
+        }
+        .link-btn:hover {
+            transform: scale(1.08) translateY(-5px);
+            background: linear-gradient(270deg, #FFD04B 40%, #6AD7E5 100%);
+            box-shadow: 0 8px 32px #ffd85855;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .desc { font-size: 1em; }
+        }
+    </style>
 </head>
 <body>
-    <h1>歡迎</h1>
-    <p>
-        <a href="nano_banana.html">前往 nano_banana.html</a>
-    </p>
+    <h1>歡迎來到 nano_banana!</h1>
+    <div class="desc">
+        一鍵直達你的專屬功能頁面<br>
+        最好玩的 Banana 工具集
+    </div>
+    <a class="link-btn" href="nano_banana.html">進入 nano_banana 頁面 🚀</a>
 </body>
 </html>
